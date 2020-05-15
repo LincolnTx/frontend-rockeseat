@@ -37,7 +37,7 @@ export default function Main() {
       mesIpva,
       kmAtual
     });
-    
+
     const data = {
       placa,
       modelo,
@@ -52,7 +52,7 @@ export default function Main() {
     }
 
     try {
-      const response = await api.post("/veiculos", data);
+      const response = await api.post("veiculos", data);
 
       alert(`Veiculo cadastrado com sucesso, placa: ${response.data.placa}`);
 
